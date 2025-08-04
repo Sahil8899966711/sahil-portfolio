@@ -31,7 +31,7 @@ const Home = () => {
         <h3>
           And I'm a <span className="multiple-text"></span>
         </h3>
-        <p style={{ width: '60%' }}>
+        <p style={{ width: '64%' }}>
           I design and develop modern, responsive, and user-friendly websites and web applications.
           With a passion for clean design and efficient code, I specialize in technologies like
           JavaScript, React.js, Tailwind CSS, and Java. Whether it's crafting elegant user interfaces
