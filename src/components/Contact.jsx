@@ -6,6 +6,10 @@ const Contact = () => {
       <h2 className="heading">Contact <span>Me</span></h2>
 
       <form action="https://formspree.io/f/mvgqbebw" method="POST">
+
+    {/* Redirect after submit dont show the formspee page thanking send message */}
+         <input type="hidden" name="_redirect" value="https://sahil-portfolio-gilt-one.vercel.app/thank-you.html" />
+
         <div className="input-box">
           <input type="text" name="name" placeholder="Full Name" required />
           <input type="email" name="email" placeholder="Email Address" required />

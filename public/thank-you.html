@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thank You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --bg-color: #191f36;
+        --snd-bf-color: #262B40;
+        --main-color: #59b2f4;
+        --text-color: #fff;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: var(--main-color);
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #ccc;
+      }
+
+      a {
+        margin-top: 2rem;
+        display: inline-block;
+        background-color: var(--main-color);
+        color: var(--text-color);
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+
+      a:hover {
+        background-color: #4ba3e2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thank You!</h1>
+    <p>Your message has been successfully sent.</p>
+    <a href="/">← Back to Home</a>
+  </body>
+</html>
