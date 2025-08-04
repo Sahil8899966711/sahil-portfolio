@@ -8,7 +8,8 @@ const Contact = () => {
       <form action="https://formspree.io/f/mvgqbebw" method="POST">
 
     {/* Redirect after submit dont show the formspee page thanking send message */}
-         <input type="hidden" name="_redirect" value="https://sahil-portfolio-gilt-one.vercel.app/thank-you.html" />
+         <input type="hidden" name="_next" value="https://sahil-portfolio-gilt-one.vercel.app/thank-you.html" />
+
 
         <div className="input-box">
           <input type="text" name="name" placeholder="Full Name" required />
