@@ -5,18 +5,19 @@ const Contact = () => {
     <section className="contact" id="contact">
       <h2 className="heading">Contact <span>Me</span></h2>
 
-      <form action="#">
+      <form action="https://formspree.io/f/mvgqbebw" method="POST">
         <div className="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
         </div>
 
         <div className="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="tel" name="phone" placeholder="Mobile Number" />
+          <input type="text" name="subject" placeholder="Email Subject" />
         </div>
 
-        <textarea cols="30" rows="10" placeholder="Your Message"></textarea><br />
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea><br />
+
         <input type="submit" value="Send Message" className="btn" />
       </form>
     </section>
