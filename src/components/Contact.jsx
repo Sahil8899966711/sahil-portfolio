@@ -5,11 +5,15 @@ const Contact = () => {
     <section className="contact" id="contact">
       <h2 className="heading">Contact <span>Me</span></h2>
 
-      <form action="https://formspree.io/f/mvgqbebw" method="POST">
-
-    {/* Redirect after submit dont show the formspee page thanking send message */}
-         <input type="hidden" name="_next" value="https://sahil-portfolio-gilt-one.vercel.app/thank-you.html" />
-
+      <form
+        action="https://formspree.io/f/mvgqbebw"
+        method="POST"
+        onSubmit={() => {
+          setTimeout(() => {
+            window.location.href = "https://sahil-portfolio-gilt-one.vercel.app/thank-you.html";
+          }, 100);
+        }}
+      >
 
         <div className="input-box">
           <input type="text" name="name" placeholder="Full Name" required />
